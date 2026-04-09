@@ -54,7 +54,7 @@ app = FastAPI(
 # ── CORS ─────────────────────────────────────────────────────────────────────────
 ALLOWED_ORIGINS = os.getenv(
     "ALLOWED_ORIGINS",
-    "http://localhost:3000,http://localhost:3001,https://anti-gravity-voice.vercel.app",
+    "http://localhost:3000,http://localhost:3001,https://speech-emotion-recognition-ashen.vercel.app,https://anti-gravity-voice.vercel.app",
 ).split(",")
 
 app.add_middleware(
